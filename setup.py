@@ -7,7 +7,7 @@ setuptools.setup(
     name="Noise-Cipher-CodeWritten",
     version="0.0.2",
     author="CodeWritten",
-    author_email="null",
+    author_email="ytcodew@gmail.com",
     description="A new cipher module",
     long_description=long_description,
     long_description_content_type="text/markdown",
