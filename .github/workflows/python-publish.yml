@@ -7,7 +7,7 @@ on: [push]
 
 jobs:
   deploy:
-    if: github.refs = 'refs/heads/main'
+    if: github.refs == 'refs/heads/main'
     runs-on: ubuntu-latest
 
     steps:
