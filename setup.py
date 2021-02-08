@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setuptools.setup(
     name="noise-cipher",
-    version="0.1.0",
+    version="0.1.1",
     author="CodeWritten",
     author_email="ytcodew@gmail.com",
     description="A new cipher module",
