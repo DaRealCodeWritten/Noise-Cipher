@@ -1,8 +1,14 @@
 #pylint:disable=R0914
-import random
-import charsets
-import warnings
-import errors
+if __name__ == "__main__":
+	import random
+	import charsets
+	import warnings
+	import errors
+else:
+	import random
+	import warnings
+	from noise import charsets
+	from noise import errors
 class Noise:
 	def __init__(self):
 		self.fallback = {
@@ -98,6 +104,8 @@ class Noise:
 		except AttributeError as e:
 			err = "The 'stream' arg must support .write(), but the stream you supplied does not"
 			raise errors.NotSupported(err) from e
+		else:
+			return stream
 	
 	def encode_to(self, string: str, stream):
 		ret = self.encode(string)
@@ -106,3 +114,5 @@ class Noise:
 		except AttributeError as e:
 			err = "The 'stream' arg must support .write(), but the stream you supplied does not"
 			raise errors.NotSupported(err) from e
+		else:
+			return stream
