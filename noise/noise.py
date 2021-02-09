@@ -104,8 +104,7 @@ class Noise:
 		except AttributeError as e:
 			err = "The 'stream' arg must support .write(), but the stream you supplied does not"
 			raise errors.NotSupported(err) from e
-		else:
-			return stream
+		return stream
 	
 	def encode_to(self, string: str, stream):
 		ret = self.encode(string)
@@ -114,5 +113,4 @@ class Noise:
 		except AttributeError as e:
 			err = "The 'stream' arg must support .write(), but the stream you supplied does not"
 			raise errors.NotSupported(err) from e
-		else:
-			return stream
+		return stream
