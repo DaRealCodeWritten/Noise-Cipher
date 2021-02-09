@@ -77,7 +77,7 @@ class Noise:
 				table.append(sub)
 				subtable = []
 		if string[len(string)-1].isnumeric() and string[len(string)-2].isnumeric():
-			conc = string[len(string)-1]+string[len(string)-1]
+			conc = string[len(string)-2]+string[len(string)-1]
 			table.append(int(conc))
 		elif string[len(string)-1].isnumeric():
 			table.append(int(string[len(string)-1]))
